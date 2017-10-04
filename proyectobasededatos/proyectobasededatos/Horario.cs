@@ -21,7 +21,7 @@ namespace proyectoBasedeDatos
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             txt_IDHorario.Text = dataGridView1.CurrentRow.Cells["id_Horario"].Value.ToString();
-            txtDias.Text = dataGridView1.CurrentRow.Cells["dias"].Value.ToString();
+            comboBoxDias.Text = dataGridView1.CurrentRow.Cells["dias"].Value.ToString();
             dateTimeInicio.Text = dataGridView1.CurrentRow.Cells["hora_Inicio"].Value.ToString();
             dateTimeFin.Text = dataGridView1.CurrentRow.Cells["hora_Fin"].Value.ToString();
         }
@@ -42,7 +42,7 @@ namespace proyectoBasedeDatos
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(sqlH.insertar(txtDias.Text, dateTimeInicio.Text, dateTimeFin.Text));
+            MessageBox.Show(sqlH.insertar(comboBoxDias.Text, dateTimeInicio.Text, dateTimeFin.Text));
             sqlH.cargaDatos(dataGridView1);
             this.limpiarCampos();
         }
@@ -50,7 +50,7 @@ namespace proyectoBasedeDatos
         private void limpiarCampos()
         {
             txt_IDHorario.Text = "";
-            txtDias.Text = "";
+            comboBoxDias.Text = "";
             dateTimeInicio.Text = "";
             dateTimeFin.Text = "";
 
@@ -58,7 +58,7 @@ namespace proyectoBasedeDatos
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(sqlH.modificar( txtDias.Text, dateTimeInicio.Text, dateTimeFin.Text, int.Parse(txt_IDHorario.Text)));
+            MessageBox.Show(sqlH.modificar(comboBoxDias.Text, dateTimeInicio.Text, dateTimeFin.Text, int.Parse(txt_IDHorario.Text)));
             sqlH.cargaDatos(dataGridView1);
             this.limpiarCampos();
         }
@@ -69,6 +69,8 @@ namespace proyectoBasedeDatos
             sqlH.cargaDatos(dataGridView1);
             this.limpiarCampos();
         }
+
+        
 
     }
 }

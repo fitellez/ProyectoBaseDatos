@@ -35,13 +35,13 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
-            this.txtDias = new System.Windows.Forms.TextBox();
             this.txt_IDHorario = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.comboBoxDias = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -105,14 +105,6 @@
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
-            // txtDias
-            // 
-            this.txtDias.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDias.Location = new System.Drawing.Point(101, 178);
-            this.txtDias.Name = "txtDias";
-            this.txtDias.Size = new System.Drawing.Size(102, 22);
-            this.txtDias.TabIndex = 48;
-            // 
             // txt_IDHorario
             // 
             this.txt_IDHorario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -171,6 +163,18 @@
             this.label1.TabIndex = 38;
             this.label1.Text = "ID_Horario";
             // 
+            // comboBoxDias
+            // 
+            this.comboBoxDias.FormattingEnabled = true;
+            this.comboBoxDias.Items.AddRange(new object[] {
+            "Sabatino",
+            "Diario",
+            "Terciado"});
+            this.comboBoxDias.Location = new System.Drawing.Point(101, 184);
+            this.comboBoxDias.Name = "comboBoxDias";
+            this.comboBoxDias.Size = new System.Drawing.Size(102, 21);
+            this.comboBoxDias.TabIndex = 57;
+            // 
             // Horario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -178,13 +182,13 @@
             this.BackgroundImage = global::proyectoBasedeDatos.Properties.Resources.fondo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(694, 296);
+            this.Controls.Add(this.comboBoxDias);
             this.Controls.Add(this.dateTimeFin);
             this.Controls.Add(this.dateTimeInicio);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnNuevo);
-            this.Controls.Add(this.txtDias);
             this.Controls.Add(this.txt_IDHorario);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -209,12 +213,12 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnNuevo;
-        private System.Windows.Forms.TextBox txtDias;
         private System.Windows.Forms.TextBox txt_IDHorario;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBoxDias;
     }
 }

@@ -61,7 +61,7 @@ namespace proyectoBasedeDatos
                     txtID_Profesor.Text = dataGridView1.CurrentRow.Cells["id_Profesor"].Value.ToString();
                     txtCupo.Text = dataGridView1.CurrentRow.Cells["cupo"].Value.ToString();
                     txtCosto_Horas.Text = dataGridView1.CurrentRow.Cells["costo_Hora"].Value.ToString();
-                    txtTipo.Text = dataGridView1.CurrentRow.Cells["tipo"].Value.ToString();
+                    comboBoxTipo.Text = dataGridView1.CurrentRow.Cells["tipo"].Value.ToString();
 
                     dateTimeInicio.Text = dataGridView1.CurrentRow.Cells["fecha_Inicio"].Value.ToString();
                     dateTimeInicio.Text = dataGridView1.CurrentRow.Cells["fecha_Fin"].Value.ToString();
@@ -74,7 +74,7 @@ namespace proyectoBasedeDatos
                     txtID_Profesor.Text = dataGridView1.CurrentRow.Cells["id_Profesor"].Value.ToString();
                     txtCupo.Text = dataGridView1.CurrentRow.Cells["cupo"].Value.ToString();
                     txtCosto_Horas.Text = dataGridView1.CurrentRow.Cells["costo_Hora"].Value.ToString();
-                    txtTipo.Text = dataGridView1.CurrentRow.Cells["tipo"].Value.ToString();
+                    comboBoxTipo.Text = dataGridView1.CurrentRow.Cells["tipo"].Value.ToString();
 
                     dateTimeInicio.Text = dataGridView1.CurrentRow.Cells["fecha_Inicio"].Value.ToString();
                     dateTimeInicio.Text = dataGridView1.CurrentRow.Cells["fecha_Fin"].Value.ToString();
@@ -89,7 +89,7 @@ namespace proyectoBasedeDatos
             txtID_Profesor.Text = "";
             txtCupo.Text = "";
             txtCosto_Horas.Text = "";
-            txtTipo.Text = "";
+            comboBoxTipo.Text = "";
 
             dateTimeInicio.Text = "";
             dateTimeInicio.Text = "";
@@ -97,9 +97,9 @@ namespace proyectoBasedeDatos
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            if (txtID_Horario.Text != "" && txtID_Profesor.Text != "" && txtNombre.Text != "" && txtCupo.Text != "" && txtTipo.Text != "" && txtCosto_Horas.Text != "")
+            if (txtID_Horario.Text != "" && txtID_Profesor.Text != "" && txtNombre.Text != "" && txtCupo.Text != "" && comboBoxTipo.Text != "" && txtCosto_Horas.Text != "")
             {
-                MessageBox.Show(curso.insertar(int.Parse(txtID_Horario.Text), int.Parse(txtID_Profesor.Text), txtNombre.Text,int.Parse(txtCupo.Text), dateTimeInicio.Text,dateTimeFin.Text,float.Parse(txtCosto_Horas.Text.Replace('.',',')),txtTipo.Text));
+                MessageBox.Show(curso.insertar(int.Parse(txtID_Horario.Text), int.Parse(txtID_Profesor.Text), txtNombre.Text, int.Parse(txtCupo.Text), dateTimeInicio.Text, dateTimeFin.Text, float.Parse(txtCosto_Horas.Text.Replace('.', ',')), comboBoxTipo.Text));
                 curso.cargaDatos(dataGridView1, opcion);
                 this.limpiar();
             }
@@ -107,7 +107,7 @@ namespace proyectoBasedeDatos
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(curso.modificar(int.Parse(txtID_Horario.Text), int.Parse(txtID_Profesor.Text), txtNombre.Text, int.Parse(txtCupo.Text), dateTimeInicio.Text, dateTimeFin.Text, float.Parse(txtCosto_Horas.Text.Replace('.', ',')), txtTipo.Text, int.Parse(txtID_Curso.Text)));
+            MessageBox.Show(curso.modificar(int.Parse(txtID_Horario.Text), int.Parse(txtID_Profesor.Text), txtNombre.Text, int.Parse(txtCupo.Text), dateTimeInicio.Text, dateTimeFin.Text, float.Parse(txtCosto_Horas.Text.Replace('.', ',')), comboBoxTipo.Text, int.Parse(txtID_Curso.Text)));
             curso.cargaDatos(dataGridView1, opcion);
             this.limpiar();
         }

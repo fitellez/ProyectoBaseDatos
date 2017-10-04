@@ -51,8 +51,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtCupo = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.txtTipo = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.comboBoxTipo = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -269,14 +269,6 @@
             this.label9.TabIndex = 46;
             this.label9.Text = "Cupo";
             // 
-            // txtTipo
-            // 
-            this.txtTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTipo.Location = new System.Drawing.Point(131, 255);
-            this.txtTipo.Name = "txtTipo";
-            this.txtTipo.Size = new System.Drawing.Size(100, 22);
-            this.txtTipo.TabIndex = 49;
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -287,6 +279,20 @@
             this.label10.TabIndex = 48;
             this.label10.Text = "Tipo";
             // 
+            // comboBoxTipo
+            // 
+            this.comboBoxTipo.FormattingEnabled = true;
+            this.comboBoxTipo.Items.AddRange(new object[] {
+            "Frances",
+            "Inglés",
+            "Alemán",
+            "Japonés",
+            "Chino"});
+            this.comboBoxTipo.Location = new System.Drawing.Point(131, 254);
+            this.comboBoxTipo.Name = "comboBoxTipo";
+            this.comboBoxTipo.Size = new System.Drawing.Size(100, 21);
+            this.comboBoxTipo.TabIndex = 50;
+            // 
             // Curso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -294,7 +300,7 @@
             this.BackgroundImage = global::proyectoBasedeDatos.Properties.Resources.fondo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(694, 296);
-            this.Controls.Add(this.txtTipo);
+            this.Controls.Add(this.comboBoxTipo);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.txtCupo);
             this.Controls.Add(this.label9);
@@ -352,7 +358,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtCupo;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtTipo;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox comboBoxTipo;
     }
 }
