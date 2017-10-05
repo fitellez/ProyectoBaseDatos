@@ -38,6 +38,8 @@ namespace proyectoBasedeDatos
             sqlH = new sqlHorario();
             sqlH.cargaDatos(dataGridView1);
             txt_IDHorario.Enabled = false;
+
+            dateTimeFin.Text = "";
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)

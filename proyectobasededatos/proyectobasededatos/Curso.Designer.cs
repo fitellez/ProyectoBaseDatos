@@ -221,7 +221,7 @@
             this.dateTimeFin.Name = "dateTimeFin";
             this.dateTimeFin.Size = new System.Drawing.Size(100, 20);
             this.dateTimeFin.TabIndex = 43;
-            this.dateTimeFin.Value = new System.DateTime(2017, 9, 18, 18, 48, 50, 0);
+            this.dateTimeFin.Value = new System.DateTime(2017, 9, 28, 0, 0, 0, 0);
             // 
             // label5
             // 

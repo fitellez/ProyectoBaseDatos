@@ -53,6 +53,7 @@
             this.dateTimeFin.ShowUpDown = true;
             this.dateTimeFin.Size = new System.Drawing.Size(102, 20);
             this.dateTimeFin.TabIndex = 56;
+            this.dateTimeFin.Value = new System.DateTime(2017, 10, 4, 0, 0, 0, 0);
             // 
             // dateTimeInicio
             // 

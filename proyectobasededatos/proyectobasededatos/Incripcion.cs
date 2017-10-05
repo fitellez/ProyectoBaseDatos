@@ -26,6 +26,8 @@ namespace proyectoBasedeDatos
             txtID_Alumno.Enabled = false;
             txtID_Curso.Enabled = false;
             txt_IDAdmin.Enabled = false;
+            dateTimePicker1.Enabled = false;
+            dateTime2.Enabled = false;
             opcion = "";
             insc = new sqlInscripcioncs();
             insc.cargaDatos(dataGridView1, opcion);
