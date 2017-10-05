@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 c:\users\dante\documents\visual studio 2015\Projects\proyectoBasedeDatos\proyectoBasedeDatos\bin\Debug\proyectoBasedeDatos.exe.config
 C:\Users\DANTE\Desktop\proyectoBasedeDatos\proyectoBasedeDatos\bin\Debug\proyectoBasedeDatos.exe.config
 C:\Users\DANTE\Desktop\proyectoBasedeDatos\proyectoBasedeDatos\bin\Debug\proyectoBasedeDatos.exe
@@ -79,3 +80,86 @@ C:\Users\INFORMATIC\Documents\GitHub\ProyectoBaseDatos\proyectobasededatos\proye
 C:\Users\INFORMATIC\Documents\GitHub\ProyectoBaseDatos\proyectobasededatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Properties.Resources.resources
 C:\Users\INFORMATIC\Documents\GitHub\ProyectoBaseDatos\proyectobasededatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Training.resources
 C:\Users\INFORMATIC\Documents\GitHub\ProyectoBaseDatos\proyectobasededatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.csproj.GenerateResource.Cache
+=======
+c:\users\dante\documents\visual studio 2015\Projects\proyectoBasedeDatos\proyectoBasedeDatos\bin\Debug\proyectoBasedeDatos.exe.config
+C:\Users\DANTE\Desktop\proyectoBasedeDatos\proyectoBasedeDatos\bin\Debug\proyectoBasedeDatos.exe.config
+C:\Users\DANTE\Desktop\proyectoBasedeDatos\proyectoBasedeDatos\bin\Debug\proyectoBasedeDatos.exe
+C:\Users\DANTE\Desktop\proyectoBasedeDatos\proyectoBasedeDatos\bin\Debug\proyectoBasedeDatos.pdb
+C:\Users\DANTE\Desktop\proyectoBasedeDatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.csprojResolveAssemblyReference.cache
+C:\Users\DANTE\Desktop\proyectoBasedeDatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Comentario.resources
+C:\Users\DANTE\Desktop\proyectoBasedeDatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Pago_Sueldo.resources
+C:\Users\DANTE\Desktop\proyectoBasedeDatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Profesor.resources
+C:\Users\DANTE\Desktop\proyectoBasedeDatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Incripcion.resources
+C:\Users\DANTE\Desktop\proyectoBasedeDatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Properties.Resources.resources
+C:\Users\DANTE\Desktop\proyectoBasedeDatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.csproj.GenerateResource.Cache
+C:\Users\DANTE\Desktop\proyectoBasedeDatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.exe
+C:\Users\DANTE\Desktop\proyectoBasedeDatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.pdb
+C:\Users\DANTE\Documents\Visual Studio 2015\Projects\proyectoBasedeDatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.exe
+C:\Users\DANTE\Documents\Visual Studio 2015\Projects\proyectoBasedeDatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.pdb
+C:\Users\DANTE\Documents\Visual Studio 2015\Projects\proyectoBasedeDatos\proyectoBasedeDatos\bin\Debug\proyectoBasedeDatos.exe
+C:\Users\DANTE\Documents\Visual Studio 2015\Projects\proyectoBasedeDatos\proyectoBasedeDatos\bin\Debug\proyectoBasedeDatos.pdb
+C:\Users\DANTE\Documents\Visual Studio 2015\Projects\proyectoBasedeDatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.csprojResolveAssemblyReference.cache
+C:\Users\DANTE\Documents\Visual Studio 2015\Projects\proyectoBasedeDatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Comentario.resources
+C:\Users\DANTE\Documents\Visual Studio 2015\Projects\proyectoBasedeDatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Pago_Sueldo.resources
+C:\Users\DANTE\Documents\Visual Studio 2015\Projects\proyectoBasedeDatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Profesor.resources
+C:\Users\DANTE\Documents\Visual Studio 2015\Projects\proyectoBasedeDatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Incripcion.resources
+C:\Users\DANTE\Documents\Visual Studio 2015\Projects\proyectoBasedeDatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Properties.Resources.resources
+C:\Users\DANTE\Documents\Visual Studio 2015\Projects\proyectoBasedeDatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.csproj.GenerateResource.Cache
+C:\Users\josej\Dropbox\proyectoBasedeDatos\proyectoBasedeDatos\proyectoBasedeDatos\bin\Debug\proyectoBasedeDatos.exe.config
+C:\Users\josej\Dropbox\proyectoBasedeDatos\proyectoBasedeDatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.exe
+C:\Users\josej\Dropbox\proyectoBasedeDatos\proyectoBasedeDatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.pdb
+C:\Users\josej\Dropbox\proyectoBasedeDatos\proyectoBasedeDatos\proyectoBasedeDatos\bin\Debug\proyectoBasedeDatos.exe
+C:\Users\josej\Dropbox\proyectoBasedeDatos\proyectoBasedeDatos\proyectoBasedeDatos\bin\Debug\proyectoBasedeDatos.pdb
+C:\Users\josej\Dropbox\proyectoBasedeDatos\proyectoBasedeDatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Comentario.resources
+C:\Users\josej\Dropbox\proyectoBasedeDatos\proyectoBasedeDatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Pago_Sueldo.resources
+C:\Users\josej\Dropbox\proyectoBasedeDatos\proyectoBasedeDatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Profesor.resources
+C:\Users\josej\Dropbox\proyectoBasedeDatos\proyectoBasedeDatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Incripcion.resources
+C:\Users\josej\Dropbox\proyectoBasedeDatos\proyectoBasedeDatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Properties.Resources.resources
+C:\Users\josej\Dropbox\proyectoBasedeDatos\proyectoBasedeDatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.csproj.GenerateResource.Cache
+C:\Users\josej\Dropbox\proyectoBasedeDatos\proyectoBasedeDatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Training.resources
+C:\Users\josej\Dropbox\proyectoBasedeDatos\proyectoBasedeDatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Administrador.resources
+C:\Users\josej\Dropbox\proyectoBasedeDatos\proyectoBasedeDatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Alumnos.resources
+C:\Users\josej\Dropbox\proyectoBasedeDatos\proyectoBasedeDatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.csprojResolveAssemblyReference.cache
+C:\Users\josej\Dropbox\proyectoBasedeDatos\proyectoBasedeDatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Horario.resources
+C:\Users\josej\Dropbox\proyectoBasedeDatos\proyectoBasedeDatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Asistencia.resources
+C:\Users\josej\Dropbox\proyectoBasedeDatos\proyectoBasedeDatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Curso.resources
+D:\Users\Arturo\Documents\semestre9\AdministracionDeBDD\Proyectos\proyectobasededatos\proyectoBasedeDatos\bin\Debug\proyectoBasedeDatos.exe.config
+D:\Users\Arturo\Documents\semestre9\AdministracionDeBDD\Proyectos\proyectobasededatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.exe
+D:\Users\Arturo\Documents\semestre9\AdministracionDeBDD\Proyectos\proyectobasededatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.pdb
+D:\Users\Arturo\Documents\semestre9\AdministracionDeBDD\Proyectos\proyectobasededatos\proyectoBasedeDatos\bin\Debug\proyectoBasedeDatos.exe
+D:\Users\Arturo\Documents\semestre9\AdministracionDeBDD\Proyectos\proyectobasededatos\proyectoBasedeDatos\bin\Debug\proyectoBasedeDatos.pdb
+D:\Users\Arturo\Documents\semestre9\AdministracionDeBDD\Proyectos\proyectobasededatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.csprojResolveAssemblyReference.cache
+D:\Users\Arturo\Documents\semestre9\AdministracionDeBDD\Proyectos\proyectobasededatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Administrador.resources
+D:\Users\Arturo\Documents\semestre9\AdministracionDeBDD\Proyectos\proyectobasededatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Alumnos.resources
+D:\Users\Arturo\Documents\semestre9\AdministracionDeBDD\Proyectos\proyectobasededatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Asistencia.resources
+D:\Users\Arturo\Documents\semestre9\AdministracionDeBDD\Proyectos\proyectobasededatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Comentario.resources
+D:\Users\Arturo\Documents\semestre9\AdministracionDeBDD\Proyectos\proyectobasededatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Curso.resources
+D:\Users\Arturo\Documents\semestre9\AdministracionDeBDD\Proyectos\proyectobasededatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Horario.resources
+D:\Users\Arturo\Documents\semestre9\AdministracionDeBDD\Proyectos\proyectobasededatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Pago_Sueldo.resources
+D:\Users\Arturo\Documents\semestre9\AdministracionDeBDD\Proyectos\proyectobasededatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Profesor.resources
+D:\Users\Arturo\Documents\semestre9\AdministracionDeBDD\Proyectos\proyectobasededatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Incripcion.resources
+D:\Users\Arturo\Documents\semestre9\AdministracionDeBDD\Proyectos\proyectobasededatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Properties.Resources.resources
+D:\Users\Arturo\Documents\semestre9\AdministracionDeBDD\Proyectos\proyectobasededatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Training.resources
+D:\Users\Arturo\Documents\semestre9\AdministracionDeBDD\Proyectos\proyectobasededatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.csproj.GenerateResource.Cache
+C:\Users\INFORMATIC\Desktop\proyectobasededatos\proyectoBasedeDatos\bin\Debug\proyectoBasedeDatos.exe.config
+C:\Users\INFORMATIC\Desktop\proyectobasededatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.exe
+C:\Users\INFORMATIC\Desktop\proyectobasededatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.pdb
+C:\Users\rarg9\Documents\GitHub\ProyectoBaseDatos\proyectobasededatos\proyectoBasedeDatos\bin\Debug\proyectoBasedeDatos.exe.config
+C:\Users\rarg9\Documents\GitHub\ProyectoBaseDatos\proyectobasededatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.exe
+C:\Users\rarg9\Documents\GitHub\ProyectoBaseDatos\proyectobasededatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.pdb
+C:\Users\rarg9\Documents\GitHub\ProyectoBaseDatos\proyectobasededatos\proyectoBasedeDatos\bin\Debug\proyectoBasedeDatos.exe
+C:\Users\rarg9\Documents\GitHub\ProyectoBaseDatos\proyectobasededatos\proyectoBasedeDatos\bin\Debug\proyectoBasedeDatos.pdb
+C:\Users\rarg9\Documents\GitHub\ProyectoBaseDatos\proyectobasededatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.csprojResolveAssemblyReference.cache
+C:\Users\rarg9\Documents\GitHub\ProyectoBaseDatos\proyectobasededatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Administrador.resources
+C:\Users\rarg9\Documents\GitHub\ProyectoBaseDatos\proyectobasededatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Alumnos.resources
+C:\Users\rarg9\Documents\GitHub\ProyectoBaseDatos\proyectobasededatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Asistencia.resources
+C:\Users\rarg9\Documents\GitHub\ProyectoBaseDatos\proyectobasededatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Comentario.resources
+C:\Users\rarg9\Documents\GitHub\ProyectoBaseDatos\proyectobasededatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Curso.resources
+C:\Users\rarg9\Documents\GitHub\ProyectoBaseDatos\proyectobasededatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Horario.resources
+C:\Users\rarg9\Documents\GitHub\ProyectoBaseDatos\proyectobasededatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Pago_Sueldo.resources
+C:\Users\rarg9\Documents\GitHub\ProyectoBaseDatos\proyectobasededatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Profesor.resources
+C:\Users\rarg9\Documents\GitHub\ProyectoBaseDatos\proyectobasededatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Incripcion.resources
+C:\Users\rarg9\Documents\GitHub\ProyectoBaseDatos\proyectobasededatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Properties.Resources.resources
+C:\Users\rarg9\Documents\GitHub\ProyectoBaseDatos\proyectobasededatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.Training.resources
+C:\Users\rarg9\Documents\GitHub\ProyectoBaseDatos\proyectobasededatos\proyectoBasedeDatos\obj\Debug\proyectoBasedeDatos.csproj.GenerateResource.Cache
+>>>>>>> 6f3f6d27b995f9ff4a65017675f722efff3e009b

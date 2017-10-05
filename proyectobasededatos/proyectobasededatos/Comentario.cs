@@ -20,7 +20,7 @@ namespace proyectoBasedeDatos
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(com.insertar(txtUsuario.Text, txtTipo_Usuario.Text, txtComentario.Text));
+            MessageBox.Show(com.insertar(txtUsuario.Text, comboBoxTipo_Usuario.Text, txtComentario.Text));
             com.cargaDatos(dataGridView1);
             this.limpiarCampos();
         }
@@ -34,7 +34,7 @@ namespace proyectoBasedeDatos
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(com.modificar(txtUsuario.Text, txtTipo_Usuario.Text, txtComentario.Text,int.Parse(txtID_Comentario.Text)));
+            MessageBox.Show(com.modificar(txtUsuario.Text, comboBoxTipo_Usuario.Text, txtComentario.Text, int.Parse(txtID_Comentario.Text)));
             com.cargaDatos(dataGridView1);
             this.limpiarCampos();
         }
@@ -57,14 +57,14 @@ namespace proyectoBasedeDatos
         {
             txtID_Comentario.Text = "";
             txtUsuario.Text = "";
-            txtTipo_Usuario.Text = "";
+            comboBoxTipo_Usuario.Text = "";
             txtComentario.Text = "";
         }
 
         private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             txtUsuario.Text = dataGridView2.CurrentRow.Cells["nombre"].Value.ToString();
-            txtTipo_Usuario.Text = dataGridView2.CurrentRow.Cells["tipo"].Value.ToString();
+            comboBoxTipo_Usuario.Text = dataGridView2.CurrentRow.Cells["tipo"].Value.ToString();
            
         }
 
@@ -72,7 +72,7 @@ namespace proyectoBasedeDatos
         {
             txtID_Comentario.Text = dataGridView1.CurrentRow.Cells["id_Comentario"].Value.ToString();
             txtUsuario.Text = dataGridView1.CurrentRow.Cells["usuario_Comentario"].Value.ToString();
-            txtTipo_Usuario.Text = dataGridView1.CurrentRow.Cells["tipo_Usuario"].Value.ToString();
+            comboBoxTipo_Usuario.Text = dataGridView1.CurrentRow.Cells["tipo_Usuario"].Value.ToString();
             txtComentario.Text = dataGridView1.CurrentRow.Cells["comentario"].Value.ToString();
         }
 
