@@ -23,6 +23,8 @@ namespace proyectoBasedeDatos
             sqlP = new sqlProfesor();
             sqlP.cargaDatos(dataGridView1);
             txt_IDProfesor.Enabled = false;
+            txtTotalHoras.Text = "0";
+            txtTotalHoras.Enabled = false;
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -54,6 +56,8 @@ namespace proyectoBasedeDatos
             txtTelefono.Text = "";
             txtTotalHoras.Text = "";
             txtPagoHora.Text = "";
+            txtTotalHoras.Text = "0";
+            txtTotalHoras.Enabled = false;
 
         }
 
@@ -65,6 +69,7 @@ namespace proyectoBasedeDatos
             txtDireccion.Text= dataGridView1.CurrentRow.Cells["direccion_Profesor"].Value.ToString();
             txtTotalHoras.Text= dataGridView1.CurrentRow.Cells["total_Horas"].Value.ToString();
             txtPagoHora.Text= dataGridView1.CurrentRow.Cells["pago_Horas"].Value.ToString();
+            txtTotalHoras.Enabled = true;
         }
     }
 }

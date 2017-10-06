@@ -21,7 +21,7 @@ namespace proyectoBasedeDatos
         {
             try
             {
-                cn = new SqlConnection(@"Data Source=.;initial catalog=TrainingInstitute; integrated Security=true");
+                cn = new SqlConnection(@"Data Source=ARTURO-PC\SQLEXPRESS;initial catalog=TrainingInstitute; integrated Security=true");
                 cn.Open();
                 //MessageBox.Show("abierto");
             }
@@ -32,7 +32,7 @@ namespace proyectoBasedeDatos
         }
         public string insertar(int Admin,int profesor,int horasPagadas,string fecha)
         {
-            string ms = "Se inserto";
+            string ms = "Se agregó correctamente";
             try
             {                
                 cmd = new SqlCommand("INSERT INTO CLASES.T_Pago_Sueldo(id_Admnistrador,id_Profesor,horasPagadas,fecha_hora) VALUES(" + Admin + "," + profesor + "," + horasPagadas + ",'" + fecha + "')", cn);
@@ -40,14 +40,14 @@ namespace proyectoBasedeDatos
             }
             catch (Exception ex)
             {
-                ms = "no se pudo insertar" + ex;
+                ms = "no se pudo agregar" + ex;
             }
             return ms;
         }
 
         public string modificar(int Admin, int profesor, int horasPagadas, string fecha,int id)
         {
-            string ms = "Se modifico";
+            string ms = "Se modificó correctamente";
             try
             {
                 cmd = new SqlCommand("UPDATE CLASES.T_Pago_Sueldo SET id_Admnistrador=" + Admin + ",id_Profesor=" + profesor +", horasPagadas="+horasPagadas+ ",fecha_hora='" + fecha + "' WHERE id_Pago="+id, cn);
@@ -61,7 +61,7 @@ namespace proyectoBasedeDatos
         }
         public string eliminar(int id)
         {
-            string ms = "Se elimino";
+            string ms = "Se eliminó correctamente";
             try
             {
                 cmd = new SqlCommand("DELETE FROM CLASES.T_Pago_Sueldo WHERE id_Pago=" + id + "", cn);
@@ -80,10 +80,12 @@ namespace proyectoBasedeDatos
                 case "":
                     try
                     {
-                        da = new SqlDataAdapter("SELECT * FROM CLASES.T_Pago_Sueldo", cn);
+                        da = new SqlDataAdapter("SELECT s.*, nombre_Administrador, nombre_Profesor FROM CLASES.T_Pago_Sueldo s, Usuarios.T_Administrador ad, Usuarios.T_Profesor p where s.id_Admnistrador=ad.id_Administrador AND s.id_Profesor=p.id_Profesor", cn);
                         dt = new DataTable();
                         da.Fill(dt);
                         dgv.DataSource = dt;
+                        dgv.Columns["id_Admnistrador"].Visible = false;
+                        dgv.Columns["id_Profesor"].Visible = false;
                     }
                     catch (Exception ex)
                     {
@@ -119,10 +121,12 @@ namespace proyectoBasedeDatos
                 case "Pago_Sueldo":
                     try
                     {
-                        da = new SqlDataAdapter("SELECT * FROM CLASES.T_Pago_Sueldo", cn);
+                        da = new SqlDataAdapter("SELECT s.*, nombre_Administrador, nombre_Profesor FROM CLASES.T_Pago_Sueldo s, Usuarios.T_Administrador ad, Usuarios.T_Profesor p where s.id_Admnistrador=ad.id_Administrador AND s.id_Profesor=p.id_Profesor", cn);
                         dt = new DataTable();
                         da.Fill(dt);
                         dgv.DataSource = dt;
+                        dgv.Columns["id_Admnistrador"].Visible = false;
+                        dgv.Columns["id_Profesor"].Visible = false;
                     }
                     catch (Exception ex)
                     {

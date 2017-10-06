@@ -22,7 +22,7 @@ namespace proyectoBasedeDatos
         {
             try
             {
-                cn = new SqlConnection(@"Data Source=.;initial catalog=TrainingInstitute; integrated Security=true");
+                cn = new SqlConnection(@"Data Source=ARTURO-PC\SQLEXPRESS;initial catalog=TrainingInstitute; integrated Security=true");
                 cn.Open();
                 //MessageBox.Show("abierto");
             }
@@ -34,7 +34,7 @@ namespace proyectoBasedeDatos
 
         public string insertar(string nombre, string telefono, string direccion, int totalHoras,float pagoPorHora)
         {
-            string ms = "Se inserto";
+            string ms = "Se agregó correctamente";
             try
             {
                 cmd = new SqlCommand("INSERT INTO USUARIOS.T_Profesor(nombre_Profesor,telefono_Profesor,direccion_Profesor,total_Horas,pago_Horas)VALUES('" + nombre + "','" + telefono + "','" + direccion + "'," + totalHoras + "," + pagoPorHora.ToString().Replace(',', '.') + ")", cn);
@@ -42,14 +42,14 @@ namespace proyectoBasedeDatos
             }
             catch(Exception ex)
             {
-                ms = "no se pudo insertar" + ex;
+                ms = "no se pudo agregar" + ex;
             }
             return ms;
         }
 
         public string modificar(string nombre, string telefono, string direccion, int totalHoras, float pagoPorHora, int id)
         {
-            string ms = "Se modifico";
+            string ms = "Se modificó correctamente";
             try
             {
                 cmd = new SqlCommand("UPDATE USUARIOS.T_Profesor SET nombre_Profesor='" + nombre + "', telefono_Profesor='" + telefono + "',direccion_Profesor='" + direccion + "',total_Horas=" + totalHoras + ",pago_Horas=" + pagoPorHora.ToString().Replace(',', '.') + " WHERE id_Profesor=" + id + "", cn);
@@ -64,7 +64,7 @@ namespace proyectoBasedeDatos
 
         public string elimina(int id)
         {
-            string ms = "Se elimino";
+            string ms = "Se eliminó correctamente";
             try
             {
                 cmd = new SqlCommand("DELETE FROM USUARIOS.T_Profesor WHERE id_Profesor=" + id + "",cn);

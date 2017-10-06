@@ -22,7 +22,7 @@ namespace proyectoBasedeDatos
         {
             try
             {
-                cn = new SqlConnection(@"Data Source=.;initial catalog=TrainingInstitute; integrated Security=true");
+                cn = new SqlConnection(@"Data Source=ARTURO-PC\SQLEXPRESS;initial catalog=TrainingInstitute; integrated Security=true");
                 cn.Open();
                 //MessageBox.Show("abierto");
             }
@@ -34,7 +34,7 @@ namespace proyectoBasedeDatos
 
         public string insertar(int Horario, int profesor,string nombre, int cupo,string fechaIni, string fechaFin,float costo, string tipo)
         {
-            string ms = "Se inserto";
+            string ms = "Se agregó correctamente";
             try
             {
                 cmd = new SqlCommand("INSERT INTO CLASES.T_Curso(id_Horario,id_Profesor,nombre_Curso,cupo,fecha_Inicio,fecha_Fin,costo_Hora,tipo) VALUES(" + Horario + "," + profesor +",'"+nombre+ "'," + cupo + ",'" + fechaIni +"','"+fechaFin+"',"+costo+",'"+tipo+ "')", cn);
@@ -42,14 +42,14 @@ namespace proyectoBasedeDatos
             }
             catch (Exception ex)
             {
-                ms = "no se pudo insertar" + ex;
+                ms = "no se pudo agregar" + ex;
             }
             return ms;
         }
 
         public string modificar(int Horario, int profesor, string nombre, int cupo, string fechaIni, string fechaFin, float costo, string tipo, int id)
         {
-            string ms = "Se modifico";
+            string ms = "Se modificó correctamente";
             try
             {
                 cmd = new SqlCommand("UPDATE CLASES.T_Curso SET id_Horario=" + Horario + ",id_Profesor=" + profesor+",nombre_Curso='"+nombre+"',cupo="+cupo+",fecha_Inicio='"+fechaIni+"',fecha_Fin='"+fechaFin+"', costo_Hora="+costo.ToString().Replace(',','.') + ", tipo='" + tipo + "' WHERE id_Curso=" + id, cn);
@@ -63,7 +63,7 @@ namespace proyectoBasedeDatos
         }
         public string eliminar(int id)
         {
-            string ms = "Se elimino";
+            string ms = "Se eliminó correctamente";
             try
             {
                 cmd = new SqlCommand("DELETE FROM CLASES.T_Curso WHERE id_Curso=" + id + "", cn);
@@ -82,10 +82,12 @@ namespace proyectoBasedeDatos
                 case "":
                     try
                     {
-                        da = new SqlDataAdapter("SELECT * FROM CLASES.T_Curso", cn);
+                        da = new SqlDataAdapter("SELECT c.*, nombre_Profesor, Hora_Inicio FROM CLASES.T_Curso c, Clases.T_Horario h, Usuarios.T_Profesor p where c.id_Profesor=p.id_Profesor AND c.id_Horario=h.id_Horario", cn);
                         dt = new DataTable();
                         da.Fill(dt);
                         dgv.DataSource = dt;
+                        dgv.Columns["id_Profesor"].Visible = false;
+                        dgv.Columns["id_Horario"].Visible = false;
                     }
                     catch (Exception ex)
                     {
@@ -121,10 +123,12 @@ namespace proyectoBasedeDatos
                 case "Curso":
                     try
                     {
-                        da = new SqlDataAdapter("SELECT * FROM CLASES.T_Curso", cn);
+                        da = new SqlDataAdapter("SELECT c.*, nombre_Profesor, Hora_Inicio FROM CLASES.T_Curso c, Clases.T_Horario h, Usuarios.T_Profesor p where c.id_Profesor=p.id_Profesor AND c.id_Horario=h.id_Horario", cn);
                         dt = new DataTable();
                         da.Fill(dt);
                         dgv.DataSource = dt;
+                        dgv.Columns["id_Profesor"].Visible = false;
+                        dgv.Columns["id_Horario"].Visible = false;
                     }
                     catch (Exception ex)
                     {

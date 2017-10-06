@@ -23,9 +23,11 @@ namespace proyectoBasedeDatos
                  dateTimeEntrada.Format = DateTimePickerFormat.Custom;
                  dateTimeEntrada.CustomFormat = "HH:mm:ss";
                  dateTimeEntrada.ShowUpDown = true;
+                 dateTimeEntrada.Value = new DateTime(1753,1, 1, 0, 0, 0);
                  dateTimeSalida.Format = DateTimePickerFormat.Custom;
                  dateTimeSalida.CustomFormat = "HH:mm:ss";
                  dateTimeSalida.ShowUpDown = true;
+                 dateTimeSalida.Value = new DateTime(1753,1, 1,0,0,0);
 
                  sqlAd = new sqlAdmnistrador();
                  sqlAd.cargaDatos(dataGridView1);

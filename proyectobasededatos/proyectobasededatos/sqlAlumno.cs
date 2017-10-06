@@ -21,7 +21,7 @@ namespace proyectoBasedeDatos
         {
             try
             {
-                cn = new SqlConnection(@"Data Source=.;initial catalog=TrainingInstitute; integrated Security=true");
+                cn = new SqlConnection(@"Data Source=ARTURO-PC\SQLEXPRESS;initial catalog=TrainingInstitute; integrated Security=true");
                 cn.Open();
                 //MessageBox.Show("abierto");
             }
@@ -33,7 +33,7 @@ namespace proyectoBasedeDatos
 
         public string insertar(string nombre, string telefono, string correo, string domicilio, int adeudo)
         {
-            string ms = "Se inserto";
+            string ms = "Se agregó correctamente";
             try
             {
                 cmd = new SqlCommand("INSERT INTO USUARIOS.T_Alumno(nombre_Alumno,telefono_Alumno,correo_Alumno,direccion_Alumno,adeudo_Alumno)VALUES('" + nombre + "','" + telefono + "','" + correo + "','" + domicilio + "'," + adeudo + ")", cn);
@@ -41,13 +41,13 @@ namespace proyectoBasedeDatos
             }
             catch (Exception ex)
             {
-                ms = "no se pudo insertar" + ex;
+                ms = "no se pudo agregar" + ex;
             }
             return ms;
         }
         public string modificar(string nombre, string telefono, string correo, string domicilio, int adeudo,int id)
         {
-            string ms = "Se modifico";
+            string ms = "Se modificó corrctamente";
             try
             {
                 cmd = new SqlCommand("UPDATE USUARIOS.T_Alumno SET nombre_Alumno='" + nombre + "',telefono_Alumno='" + telefono + "',correo_Alumno='" + correo + "',direccion_Alumno='" + domicilio + "',adeudo_Alumno=" + adeudo + " WHERE id_Alumno=" + id + "", cn);
@@ -62,7 +62,7 @@ namespace proyectoBasedeDatos
 
         public string eliminar(int id)
         {
-            string ms = "Se elimino";
+            string ms = "Se eliminó correctamente";
             try
             {
                 cmd = new SqlCommand("DELETE FROM USUARIOS.T_Alumno WHERE id_Alumno=" + id + "", cn);

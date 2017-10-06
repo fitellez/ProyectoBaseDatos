@@ -44,7 +44,7 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBoxTipo_Usuario = new System.Windows.Forms.ComboBox();
+            this.txtTipo_Usuario = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -150,7 +150,7 @@
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(75, 23);
             this.btnNuevo.TabIndex = 22;
-            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.Text = "Agregar";
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
@@ -199,17 +199,17 @@
             this.comboBox1.TabIndex = 28;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // comboBoxTipo_Usuario
+            // txtTipo_Usuario
             // 
-            this.comboBoxTipo_Usuario.FormattingEnabled = true;
-            this.comboBoxTipo_Usuario.Items.AddRange(new object[] {
-            "Administrador",
+            this.txtTipo_Usuario.FormattingEnabled = true;
+            this.txtTipo_Usuario.Items.AddRange(new object[] {
+            "Administrador ",
             "Alumno",
             "Profesor"});
-            this.comboBoxTipo_Usuario.Location = new System.Drawing.Point(120, 129);
-            this.comboBoxTipo_Usuario.Name = "comboBoxTipo_Usuario";
-            this.comboBoxTipo_Usuario.Size = new System.Drawing.Size(100, 21);
-            this.comboBoxTipo_Usuario.TabIndex = 29;
+            this.txtTipo_Usuario.Location = new System.Drawing.Point(117, 129);
+            this.txtTipo_Usuario.Name = "txtTipo_Usuario";
+            this.txtTipo_Usuario.Size = new System.Drawing.Size(103, 21);
+            this.txtTipo_Usuario.TabIndex = 29;
             // 
             // Comentario
             // 
@@ -218,7 +218,7 @@
             this.BackgroundImage = global::proyectoBasedeDatos.Properties.Resources.fondo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(694, 296);
-            this.Controls.Add(this.comboBoxTipo_Usuario);
+            this.Controls.Add(this.txtTipo_Usuario);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.dataGridView2);
@@ -263,6 +263,6 @@
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBoxTipo_Usuario;
+        private System.Windows.Forms.ComboBox txtTipo_Usuario;
     }
 }

@@ -22,7 +22,7 @@ namespace proyectoBasedeDatos
         {
             try
             {
-                cn = new SqlConnection(@"Data Source=.;initial catalog=TrainingInstitute; integrated Security=true");
+                cn = new SqlConnection(@"Data Source=ARTURO-PC\SQLEXPRESS;initial catalog=TrainingInstitute; integrated Security=true");
                 cn.Open();
                 //MessageBox.Show("abierto");
             }
@@ -33,7 +33,7 @@ namespace proyectoBasedeDatos
         }
         public string insertar(string usuario, string tipoUsuario, string comentario)
         {
-            string ms = "Se inserto";
+            string ms = "Se agregó correctamente";
             try
             {                
                 cmd = new SqlCommand("INSERT INTO CLASES.T_Comentario(usuario_Comentario,tipo_Usuario,comentario) VALUES ('" + usuario + "','" + tipoUsuario + "','" + comentario + "')", cn);
@@ -41,13 +41,13 @@ namespace proyectoBasedeDatos
             }
             catch (Exception ex)
             {
-                ms = "no se pudo insertar" + ex;
+                ms = "no se pudo agregar" + ex;
             }
             return ms;
         }
         public string modificar(string usuario, string tipoUsuario, string comentario,int id)
         {
-            string ms = "Se modifico";
+            string ms = "Se modificó correctamente";
             try
             {                
                 cmd= new SqlCommand("UPDATE CLASES.T_Comentario SET usuario_Comentario='"+usuario+ "',tipo_Usuario='"+tipoUsuario+ "',comentario='"+comentario+"' WHERE id_Comentario="+id,cn);
@@ -61,7 +61,7 @@ namespace proyectoBasedeDatos
         }
         public string elimina(int id)
         {
-            string ms = "Se elimino";
+            string ms = "Se eliminó correctamente";
             try
             {
                 cmd = new SqlCommand("DELETE FROM CLASES.T_Comentario WHERE id_Comentario=" + id + "", cn);

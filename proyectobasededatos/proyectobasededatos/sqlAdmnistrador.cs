@@ -22,7 +22,7 @@ namespace proyectoBasedeDatos
         {
             try
             {
-                cn = new SqlConnection(@"Data Source=.;initial catalog=TrainingInstitute; integrated Security=true");
+                cn = new SqlConnection(@"Data Source=ARTURO-PC\SQLEXPRESS;initial catalog=TrainingInstitute; integrated Security=true");
                 cn.Open();
                 //MessageBox.Show("abierto");
             }
@@ -34,7 +34,7 @@ namespace proyectoBasedeDatos
 
         public string insertar(string nombre, string telefono,string correo, string direccion, string horaEntrada, string horaSalida)
         {
-            string ms = "Se inserto";
+            string ms = "Se agregó correctamente";
             try
             {
                 cmd = new SqlCommand("INSERT INTO USUARIOS.T_Administrador(nombre_Administrador,telefono_Administrador,correo_Administrador, direccion_Administrador,hora_Ent,hora_Sal) VALUES ('" + nombre + "','" + telefono +"','"+correo+ "','" + direccion + "','" + horaEntrada+ "','" + horaSalida + "')", cn);
@@ -42,14 +42,14 @@ namespace proyectoBasedeDatos
             }
             catch (Exception ex)
             {
-                ms = "no se pudo insertar" + ex;
+                ms = "no se pudo agregar" + ex;
             }
             return ms;
         }
 
         public string modificar(string nombre, string telefono, string correo, string direccion, string horaEntrada, string horaSalida, int id)
         {
-            string ms = "Se modifico";
+            string ms = "Se modificó correctamente";
             try
             {
                 cmd = new SqlCommand("UPDATE USUARIOS.T_Administrador SET nombre_Administrador='" + nombre + "', telefono_Administrador='" + telefono + "', correo_Administrador='"+correo+"',direccion_Administrador='" + direccion + "', hora_Ent='" + horaEntrada + "', hora_Sal='" + horaSalida + "' WHERE id_Administrador=" + id + "", cn);
@@ -64,7 +64,7 @@ namespace proyectoBasedeDatos
 
         public string elimina(int id)
         {
-            string ms = "Se elimino";
+            string ms = "Se eliminó correctamente";
             try
             {
                 cmd = new SqlCommand("DELETE FROM USUARIOS.T_Administrador WHERE id_Administrador=" + id + "", cn);

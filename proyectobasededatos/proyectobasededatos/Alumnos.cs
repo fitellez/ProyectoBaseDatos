@@ -17,6 +17,8 @@ namespace proyectoBasedeDatos
         public Alumnos()
         {
             InitializeComponent();
+            txtAdeudo.Text = "0";
+            txtAdeudo.Enabled = false;
         }
 
         private void Alumnos_Load(object sender, EventArgs e)
@@ -41,9 +43,11 @@ namespace proyectoBasedeDatos
             txtID_Alumno.Text = "";
             txtnombre.Text = "";
             txtTelefono.Text = "";
-            txtAdeudo.Text = "";
+            txtAdeudo.Text = "0";
+            txtAdeudo.Enabled = true;
             txtCorreo.Text = "";
             txtDireccion.Text = "";
+            txtAdeudo.Enabled = false;
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -72,6 +76,7 @@ namespace proyectoBasedeDatos
                     txtCorreo.Text = dataGridView1.CurrentRow.Cells["correo_Alumno"].Value.ToString();
                     txtTelefono.Text = dataGridView1.CurrentRow.Cells["telefono_Alumno"].Value.ToString();
                     txtAdeudo.Text= dataGridView1.CurrentRow.Cells["adeudo_Alumno"].Value.ToString();
+                    txtAdeudo.Enabled = true;
                     break;
             }
         }

@@ -22,7 +22,7 @@ namespace proyectoBasedeDatos
         {
             try
             {
-                cn = new SqlConnection(@"Data Source=.;initial catalog=TrainingInstitute; integrated Security=true");
+                cn = new SqlConnection(@"Data Source=ARTURO-PC\SQLEXPRESS;initial catalog=TrainingInstitute; integrated Security=true");
                 cn.Open();
                 //MessageBox.Show("abierto");
             }
@@ -34,7 +34,7 @@ namespace proyectoBasedeDatos
 
         public string insertar( int profesor, int numhoras,string fecha)
         {
-            string ms = "Se inserto";
+            string ms = "Se agregó correctamente";
             try
             {
                 cmd = new SqlCommand("INSERT INTO CLASES.T_Asistencia (id_Profesor,num_Horas,fecha_hora) VALUES ("  + profesor + "," + numhoras + ",'" + fecha + "')", cn);
@@ -42,14 +42,14 @@ namespace proyectoBasedeDatos
             }
             catch (Exception ex)
             {
-                ms = "no se pudo insertar" + ex;
+                ms = "no se pudo agregar" + ex;
             }
             return ms;
         }
 
         public string modificar(int profesor, int numhoras, string fecha, int id)
         {
-            string ms = "Se modifico";
+            string ms = "Se modificó correctamente";
             try
             {
                 cmd = new SqlCommand("UPDATE CLASES.T_Asistencia SET id_Profesor=" + profesor +",num_Horas="+numhoras+ ",fecha_hora='" + fecha + "' WHERE id_Asistencia=" + id, cn);
@@ -63,7 +63,7 @@ namespace proyectoBasedeDatos
         }
         public string eliminar(int id)
         {
-            string ms = "Se elimino";
+            string ms = "Se eliminó correctamente";
             try
             {
                 cmd = new SqlCommand("DELETE FROM CLASES.T_Asistencia WHERE id_Asistencia=" + id + "", cn);
@@ -82,10 +82,11 @@ namespace proyectoBasedeDatos
                 case "":
                     try
                     {
-                        da = new SqlDataAdapter("SELECT * FROM CLASES.T_Asistencia", cn);
+                        da = new SqlDataAdapter("SELECT asi.*, nombre_Profesor FROM CLASES.T_Asistencia asi, Usuarios.T_Profesor p Where asi.id_Profesor=p.id_Profesor", cn);
                         dt = new DataTable();
                         da.Fill(dt);
                         dgv.DataSource = dt;
+                        dgv.Columns["id_Profesor"].Visible = false;
                     }
                     catch (Exception ex)
                     {
@@ -109,10 +110,11 @@ namespace proyectoBasedeDatos
                 case "Asistencia":
                     try
                     {
-                        da = new SqlDataAdapter("SELECT * FROM CLASES.T_Asistencia", cn);
+                        da = new SqlDataAdapter("SELECT asi.*, nombre_Profesor FROM CLASES.T_Asistencia asi, Usuarios.T_Profesor p Where asi.id_Profesor=p.id_Profesor", cn);
                         dt = new DataTable();
                         da.Fill(dt);
                         dgv.DataSource = dt;
+                        dgv.Columns["id_Profesor"].Visible = false;
                     }
                     catch (Exception ex)
                     {
